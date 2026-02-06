@@ -35,11 +35,19 @@ venv\Scripts\activate
 #on Max/Linux:
 source venv/bin/activate
 
+#Caution: Consider only if you encounter any errors if else ignore this
+if you encounter Unauthorized access while running this run the following code
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+
 ```
 
 3. **Install dependencies:**
 ```bash
 pip install -r requirements.txt
+
+#Caution: Consider only if you encounter any errors if else ignore this
+if your pip dependency is 2.5.3 or lower and encountering incompatible upgrade it
+pip install --upgrade "pydantic>=2.9,<3"
 ```
 
 3. **Configure environment variables:**
